@@ -1,6 +1,47 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
 
+main{
+    min-height: 64.4vh;
+}
+a{
+    color: inherit;
+}
 
-.titlepage {
-    text-align: center;
-    justify-content: left;
+i {
+    display: inline-block;
+    height: 3em;
+    padding: 0.5em;
+}
+
+button {
+    background-color: #D90368!important;
+}
+.nav_logo {
+    height: 2em;
+}
+.nav-link{
+    font-weight: bold;
+}
+.text-bg-dark{
+    color:#ff3091 !important;
+    font-weight: 400;
+}
+.navbar-dark{
+    --bs-navbar-active-color:#ff3091;
+}
+
+.menu_text{
+    color: aliceblue;
+}
+.cards_img{
+    height: 225px;
+    width: 100%;
+}
+
+.social_icons .bi{
+    height: 3em;
+}
+
+.form_message{
+    min-height: 5em;
 }

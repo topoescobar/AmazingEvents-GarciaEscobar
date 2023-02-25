@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Upcoming Events</title>
+  <title>Upcoming Events - Amazing Events</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
   <link rel="shortcut icon" href="./assets/logo.ico" type="image/x-icon">
@@ -13,38 +13,41 @@
 
 <body class="vh-100 text-bg-dark bg-gradient">
   <header>
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark " aria-label="Offcanvas navbar large">
-      <div class="container-fluid text-center">
-        <a class="navbar-brand" href="#">LOGO</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar2"
-          aria-controls="offcanvasNavbar2">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbar2"
-          aria-labelledby="offcanvasNavbar2Label">
-          <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasNavbar2Label">Menu</h5>
-            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
-              aria-label="Close"></button>
-          </div>
-          <div class="offcanvas-body">
-            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Upcoming Events</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./past_events.html">Past Events</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./contact.html">Contact</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./stats.html">Stats</a>
-              </li>
-            </ul>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark text-center" aria-label="Offcanvas navbar large">
+      <div class="container-fluid ">
+        <a class="navbar-brand" href="#"><img src="./assets/Logo Amazing Events.png" alt="logo" class="nav_logo"></a>
+        <div class="d-flex gap-2 flex-wrap">
+          <h3 class="d-md-none menu_text">Menu</h3>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar2"
+            aria-controls="offcanvasNavbar2">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbar2"
+            aria-labelledby="offcanvasNavbar2Label">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbar2Label">Menu</h5>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link" href="./index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Upcoming Events</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./past_events.html">Past Events</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./contact.html">Contact</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./stats.html">Stats</a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
@@ -132,7 +135,8 @@
     </div>
   </header>
 
-  <main class="">
+  <main >
+    <!-- FILTERS -->
     <div class="container p-2 ">
       <div class="row my-3 d-flex align-content-center justify-content-center text-center ">
         <form action="" class="p-2 col-10 col-lg-8">
@@ -168,15 +172,9 @@
 
               <div class="col">
                 <div class="card shadow-sm">
-                  <svg class="bd-placeholder-img card-img-top" width="100%" height="225"
-                    xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail"
-                    preserveAspectRatio="xMidYMid slice" focusable="false">
-                    <title>Placeholder</title>
-                    <rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef"
-                      dy=".3em">Thumbnail1</text>
-                  </svg>
+                  <img src="./assets/Cinema.jpg" alt="cinema img" class="cards_img object-fit-cover border rounded">
                   <div class="card-body">
-                    <h3>Titulo1</h3>
+                    <h3>Cinema</h3>
                     <p class="card-text ">This is a wider card with supporting text below as a natural lead-in to
                       additional content. This content is a little bit longer.</p>
                     <div class="d-flex justify-content-between align-items-center">
@@ -191,15 +189,9 @@
 
               <div class="col">
                 <div class="card shadow-sm">
-                  <svg class="bd-placeholder-img card-img-top" width="100%" height="225"
-                    xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail"
-                    preserveAspectRatio="xMidYMid slice" focusable="false">
-                    <title>Placeholder</title>
-                    <rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef"
-                      dy=".3em">Thumbnail1</text>
-                  </svg>
+                  <img src="./assets/Costume_Party.jpg" alt="Party img" class="cards_img object-fit-cover border rounded">
                   <div class="card-body">
-                    <h3>Titulo2</h3>
+                    <h3>Costume Party</h3>
                     <p class="card-text ">This is a wider card with supporting text below as a natural lead-in to
                       additional content. This content is a little bit longer.</p>
                     <div class="d-flex justify-content-between align-items-center">
@@ -214,15 +206,9 @@
 
               <div class="col">
                 <div class="card shadow-sm">
-                  <svg class="bd-placeholder-img card-img-top" width="100%" height="225"
-                    xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail"
-                    preserveAspectRatio="xMidYMid slice" focusable="false">
-                    <title>Placeholder</title>
-                    <rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef"
-                      dy=".3em">Thumbnail1</text>
-                  </svg>
+                  <img src="./assets/Food_Fair.jpg" alt="" class="cards_img object-fit-cover border rounded">
                   <div class="card-body">
-                    <h3>Titulo3</h3>
+                    <h3>Food Fair</h3>
                     <p class="card-text ">This is a wider card with supporting text below as a natural lead-in to
                       additional content. This content is a little bit longer.</p>
                     <div class="d-flex justify-content-between align-items-center">
@@ -237,15 +223,43 @@
 
               <div class="col">
                 <div class="card shadow-sm">
-                  <svg class="bd-placeholder-img card-img-top" width="100%" height="225"
-                    xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail"
-                    preserveAspectRatio="xMidYMid slice" focusable="false">
-                    <title>Placeholder</title>
-                    <rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef"
-                      dy=".3em">Thumbnail1</text>
-                  </svg>
+                  <img src="./assets/Marathon.jpg" alt="Marathon" class="cards_img object-fit-cover border rounded">
                   <div class="card-body">
-                    <h3>Titulo4</h3>
+                    <h3>Marathon</h3>
+                    <p class="card-text ">This is a wider card with supporting text below as a natural lead-in to
+                      additional content. This content is a little bit longer.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <small class="text-muted">Price: $$$</small>
+                      <div class="btn-group">
+                        <button type="button" class="btn btn-dark">View</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col">
+                <div class="card shadow-sm">
+                  <img src="./assets/Museum_Tour.jpg" alt="Museum tour" class="cards_img object-fit-cover border rounded">
+                  <div class="card-body">
+                    <h3>Museum Tour</h3>
+                    <p class="card-text ">This is a wider card with supporting text below as a natural lead-in to
+                      additional content. This content is a little bit longer.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <small class="text-muted">Price: $$$</small>
+                      <div class="btn-group">
+                        <button type="button" class="btn btn-dark">View</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col">
+                <div class="card shadow-sm">
+                  <img src="./assets/Music_Concert.jpg" alt="Music Concert" class="cards_img object-fit-cover border rounded">
+                  <div class="card-body">
+                    <h3>Music Concert </h3>
                     <p class="card-text ">This is a wider card with supporting text below as a natural lead-in to
                       additional content. This content is a little bit longer.</p>
                     <div class="d-flex justify-content-between align-items-center">
@@ -265,31 +279,19 @@
     </div>
   </main>
 
-  <div class="container-fluid text-bg-dark text-light">
-    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-
-      <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-        <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24">
-              <use xlink:href="#twitter"></use>
-            </svg></a></li>
-        <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24">
-              <use xlink:href="#instagram"></use>
-            </svg></a></li>
-        <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24">
-              <use xlink:href="#facebook"></use>
-            </svg></a></li>
-      </ul>
-
-      <div class="col-md-4 d-flex align-items-center">
-        <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
-          <svg class="bi" width="30" height="24">
-            <use xlink:href="#bootstrap"></use>
-          </svg>
-        </a>
-        <span class="mb-3 mb-md-0 ">Cohort</span>
+  <footer class="container-fluid bg-black">
+    <div class="row justify-content-between">
+      <div class="col social_icons">
+        <a href="https://www.instagram.com/" target="_blank"><i class="bi bi-instagram"></i></a>
+        <a href="https://www.facebook.com/" target="_blank"><i class="bi bi-twitter"></i></a>
+        <a href="https://twitter.com/" target="_blank"><i class="bi bi-facebook"></i></a>
       </div>
-    </footer>
-  </div>
+      <div class="col-3 p-2">
+        <span><p>COHORT</p></span>
+      </div>
+    </div>
+
+  </footer>
 
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
