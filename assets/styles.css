@@ -45,10 +45,11 @@ button {
     width: 100%;
 }
 
-.social_icons .bi{
-    height: 3em;
+.social_icons {
+    font-size: 1.2em;
 }
 
 .form_message{
     min-height: 5em;
 }
+
