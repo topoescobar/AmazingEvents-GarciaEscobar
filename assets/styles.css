@@ -2,13 +2,13 @@
 
 body {
     min-height: 100vh;
-    width: 100vh!;
+    width: 100vh !;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto 1fr auto;
-  }
+}
 
-a{
+a {
     color: inherit;
 }
 
@@ -19,26 +19,36 @@ i {
 }
 
 button {
-    background-color: #D90368!important;
+    background-color: #D90368 !important;
 }
+
 .nav_logo {
     height: 2em;
 }
-.nav-link{
+
+.nav-link {
     font-weight: bold;
 }
-.text-bg-dark{
-    color:#ff3091 !important;
-    font-weight: 400;
-}
-.navbar-dark{
-    --bs-navbar-active-color:#ff3091;
+
+.bgcolor2 {
+        color: #000;
+        background-color: #6ea8fe;
 }
 
-.menu_text{
+.text-bg-dark {
+    color: #ff3091 !important;
+    font-weight: 400;
+}
+
+.navbar-dark {
+    --bs-navbar-active-color: #ff3091;
+}
+
+.menu_text {
     color: aliceblue;
 }
-.cards_img{
+
+.cards_img {
     height: 225px;
     width: 100%;
 }
@@ -47,7 +57,7 @@ button {
     font-size: 1.2em;
 }
 
-.form_message{
+.form_message {
     min-height: 5em;
 }
 
