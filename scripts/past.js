@@ -15,7 +15,7 @@ for (activity of data.events)  {
             <div class="d-flex justify-content-between align-items-center">
               <small class="text-muted">Price: $$$</small>
               <div class="btn-group">
-                <button type="button" class="btn btn-dark">View</button>
+                <a href="./details.html" class="btn btn-dark">Details</a>
               </div>
             </div>
           </div>
