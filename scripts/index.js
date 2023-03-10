@@ -2,7 +2,7 @@ const divAlbum = document.getElementById('album');
 
     for (activity of data.events) {
         const card = document.createElement('div');
-        card.classList.add('col');
+        card.classList.add('col', 'card_col');
         card.innerHTML = `
         <div class="card shadow-sm">
           <img src="${activity.image}" alt="event" class="cards_img object-fit-cover border rounded">
@@ -20,3 +20,25 @@ const divAlbum = document.getElementById('album');
       `
       divAlbum.append(card);
     }
+
+  
+
+    // console.log(searchCaptured);
+    
+    function searching() {
+      let cards = document.querySelectorAll('.card_col')
+      let searchInput = document.getElementById("search").value
+      for (var i = 0; i < cards.length; i++) {
+        if(cards[i].innerText.toLowerCase().includes(searchInput.toLowerCase())) {
+            cards[i].classList.remove("is_hidden");
+        } else {
+          cards[i].classList.add("is_hidden");
+        }
+      }
+    }
+/* 
+searchCaptured.addEventListener("input", (e)=>{
+  console.log(e.target.value);
+})
+
+ */

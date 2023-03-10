@@ -67,3 +67,9 @@ button {
 .card {
     height: 100%;
 }
+
+.is_hidden {
+	display: none ;
+    position: absolute;
+}
+
