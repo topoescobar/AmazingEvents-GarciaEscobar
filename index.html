@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="./assets/styles.css">
 </head>
 
-<body class="text-bg-dark bg-dark bg-gradient">
+<body class="text-bg-dark">
   
   <header>
     <nav class="navbar navbar-expand-md navbar-dark bg-black text-center" aria-label="Offcanvas navbar large">
@@ -55,21 +55,23 @@
     </nav>
 
     <!-- NAV-BANNER -->
-    <div class="container-fluid d-flex bgcolor2 text-center">
-      <div class="col " ><a class="fs-1 text-decoration-none text-reset" href="./stats.html"> &lt;</a></div>
-      <div class="col" >
-        <h1>Home</h1>
+    <div class="circle_bg">
+      <div class="container-fluid d-flex text-center align-content-center navBanner" >
+        <div class="col" ><a class=" text-decoration-none arrow" href="./stats.html"> &lt;</a></div>
+        <div class="col" >
+          <h1>Home</h1>
+        </div>
+        <div class="col" ><a class=" text-decoration-none  arrow" href="./upcoming_events.html"> &gt;</a></div>
       </div>
-      <div class="col " ><a class="fs-1 text-decoration-none text-reset" href="./upcoming_events.html"> &gt;</a></div>
     </div>
 
   </header>
 
-  <main>
+  <main class="text-bg-dark bg-gradient">
     <div class="container">
       <!-- FILTERS -->
       <div class="row my-3 d-flex align-content-center justify-content-center text-center ">
-        <form class="p-2 col-10 col-lg-8">p
+        <form class="p-2 col-10 col-lg-8">
           <fieldset>
             <label class="px-1">
               <input type="checkbox" name="position1" value="Category1">
@@ -103,7 +105,7 @@
     <!-- CARDS -->
     <div class="container">
       <div class="row">
-        <div class="container album py-4 bg-light border rounded">
+        <div class="container album py-4 bg-light border rounded circle_bg">
             <div class="row row-cols-1 row-cols-sm-3 row-cols-md-4 g-3 text-bg-light" id="album">
 
             </div>

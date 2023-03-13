@@ -8,6 +8,11 @@ body {
     grid-template-rows: auto 1fr auto;
 }
 
+h1{
+    font-size:3.5rem;
+    font-weight: 600;
+}
+
 a {
     color: inherit;
 }
@@ -31,11 +36,6 @@ button {
 
 .nav-link {
     font-weight: bold;
-}
-
-.bgcolor2 {
-        color: #000;
-        background-color: #6ea8fe;
 }
 
 .text-bg-dark {
@@ -64,7 +64,7 @@ button {
     min-height: 5em;
 }
 
-.album {
+.circle_bg {
     background-image: url("../assets/background_3d.jpg")
 }
 .card {
@@ -77,10 +77,28 @@ button {
 }
 
 .border{
-    border: 0.1rem solid #D90368!important;
+    border: 2px solid #5b78ff!important;
 }
 
 #album {
     background-color: #00000000!important;
 }
 
+.navBanner{
+    color: whitesmoke;
+    font-size: 3rem;
+    border-top: 2px solid bisque;
+    border-bottom: 2px solid bisque;
+    background-color: rgba(15, 1, 26, 0.5)
+}
+
+.arrow{
+    font-size: 5rem;
+    font-weight: 650;
+}
+
+.col{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
