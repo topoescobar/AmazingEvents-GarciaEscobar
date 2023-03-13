@@ -4,8 +4,8 @@ const divAlbum = document.getElementById('album');
         const card = document.createElement('div');
         card.classList.add('col', 'card_col');
         card.innerHTML = `
-        <div class="card shadow-sm">
-          <img src="${activity.image}" alt="event" class="cards_img object-fit-cover border rounded">
+        <div class="card border rounded shadow-sm">
+          <img src="${activity.image}" alt="event" class="cards_img object-fit-cover">
           <div class="card-body">
             <h3>${activity.name}</h3>
             <p class="card-text ">${activity.description} </p>
@@ -36,6 +36,10 @@ const divAlbum = document.getElementById('album');
         }
       }
     }
+
+//delay on search
+
+
 /* 
 searchCaptured.addEventListener("input", (e)=>{
   console.log(e.target.value);

@@ -64,6 +64,9 @@ button {
     min-height: 5em;
 }
 
+.album {
+    background-image: url("../assets/background_3d.jpg")
+}
 .card {
     height: 100%;
 }
@@ -71,5 +74,13 @@ button {
 .is_hidden {
 	display: none ;
     position: absolute;
+}
+
+.border{
+    border: 0.1rem solid #D90368!important;
+}
+
+#album {
+    background-color: #00000000!important;
 }
 
