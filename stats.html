@@ -1,12 +1,180 @@
 <!DOCTYPE html>
-<html lang="">
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-  </head>
-  <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
-  </body>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amazing Events Home</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <link rel="shortcut icon" href="./assets/logo.ico" type="image/x-icon">
+  <link rel="stylesheet" href="./assets/styles.css">
+</head>
+
+<body class="text-bg-dark bg-dark bg-gradient">
+  <header>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-md navbar-dark bg-black text-center" aria-label="Offcanvas navbar large">
+      <div class="container-fluid ">
+        <a class="navbar-brand" href="#"><img src="./assets/LogoAmazingEvents.png" alt="logo" class="nav_logo"></a>
+        <div class="d-flex gap-2 flex-wrap">
+          <h3 class="d-md-none menu_text">Menu</h3>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar2"
+            aria-controls="offcanvasNavbar2">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbar2"
+            aria-labelledby="offcanvasNavbar2Label">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbar2Label">Menu</h5>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link" href="./index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./upcoming_events.html">Upcoming Events</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./past_events.html">Past Events</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./contact.html">Contact</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Stats</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- NAV-BANNER -->
+    <div class="container-fluid d-flex bgcolor2 text-center">
+      <div class="col " ><a class="fs-1 text-decoration-none text-reset" href="./contact.html"> &lt;</a></div>
+      <div class="col" >
+        <h1>Stats</h1>
+      </div>
+      <div class="col " ><a class="fs-1 text-decoration-none text-reset" href="./index.html"> &gt;</a></div>
+    </div>
+  </header>
+
+  <main>
+    <div class="container table-section p-3 my-3">
+      <table class="table table-dark table-hover table-striped text-bg-secondary border border-1 table-borderless">
+        <thead>
+          <tr class="table-danger text-center ">
+            <th colspan="3">Events statistics</th>
+          </tr>
+          <tr>
+            <td>Events with the highest percentaje of attendance</td>
+            <td>Events with the lowest percentaje of attendance</td>
+            <td>Event with larger capacity</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td> - </td>
+            <td> - </td>
+            <td> - </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <table class="table table-dark table-hover table-striped text-bg-secondary border border-1 table-borderless">
+        <thead>
+          <tr class="table-danger text-center">
+            <th colspan="3">Upcoming events statistics by category</th>
+          </tr>
+          <tr>
+            <td>Categories</td>
+            <td>Revenues</td>
+            <td>Percentaje of attendance</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td> - </td>
+            <td> - </td>
+            <td> - </td>
+          </tr>
+          <tr>
+            <td> - </td>
+            <td> - </td>
+            <td> - </td>
+          </tr>
+          <tr>
+            <td> - </td>
+            <td> - </td>
+            <td> - </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <table class="table table-dark table-hover table-striped text-bg-secondary border border-1 table-borderless">
+        <thead>
+          <tr class="table-danger text-center">
+            <th colspan="3">Past events statistic by category</th>
+          </tr>
+          <tr>
+            <th>Categories</th>
+            <th>Revenues</th>
+            <th>Percentaje of attendance</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td> - </td>
+            <td> - </td>
+            <td> - </td>
+          </tr>
+          <tr>
+            <td> - </td>
+            <td> - </td>
+            <td> - </td>
+          </tr>
+          <tr>
+            <td> - </td>
+            <td> - </td>
+            <td> - </td>
+          </tr>
+          <tr>
+            <td> - </td>
+            <td> - </td>
+            <td> - </td>
+          </tr>
+          <tr>
+            <td> - </td>
+            <td> - </td>
+            <td> - </td>
+          </tr>
+        </tbody>
+      </table>
+
+    </div>
+  </main>
+
+  <footer class="container-fluid bg-black text-bg-dark">
+    <div class="row justify-content-between">
+      <div class="col social_icons">
+        <a href="https://www.instagram.com/" target="_blank"><i class="bi bi-instagram"></i></a>
+        <a href="https://www.facebook.com/" target="_blank"><i class="bi bi-twitter"></i></a>
+        <a href="https://twitter.com/" target="_blank"><i class="bi bi-facebook"></i></a>
+      </div>
+      <div class="col-3 p-2">
+        <span>COHORT</span>
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>
