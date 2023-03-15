@@ -12,7 +12,7 @@
 </head>
 
 <body class="text-bg-dark">
-  
+
   <header>
     <nav class="navbar navbar-expand-md navbar-dark bg-black text-center" aria-label="Offcanvas navbar large">
       <div class="container-fluid ">
@@ -56,12 +56,12 @@
 
     <!-- NAV-BANNER -->
     <div class="circle_bg">
-      <div class="container-fluid d-flex text-center align-content-center navBanner" >
-        <div class="col" ><a class=" text-decoration-none arrow" href="./stats.html"> &lt;</a></div>
-        <div class="col" >
+      <div class="container-fluid d-flex text-center align-content-center navBanner">
+        <div class="col"><a class=" text-decoration-none arrow" href="./stats.html"> &lt;</a></div>
+        <div class="col">
           <h1>Home</h1>
         </div>
-        <div class="col" ><a class=" text-decoration-none  arrow" href="./upcoming_events.html"> &gt;</a></div>
+        <div class="col"><a class=" text-decoration-none  arrow" href="./upcoming_events.html"> &gt;</a></div>
       </div>
     </div>
 
@@ -74,20 +74,36 @@
         <form class="p-2 col-10 col-lg-8">
           <fieldset>
             <label class="px-1">
-              <input type="checkbox" name="position1" value="Category1">
-              Category1
+              <input type="checkbox" name="category" value="foodFair" class="category"> 
+              Food Fair
             </label>
             <label class="px-1">
-              <input type="checkbox" name="position2" value="Category2">
-              Category2
+              <input type="checkbox" name="category" value="museum" class="category"> 
+              Museum
             </label>
             <label class="px-1">
-              <input type="checkbox" name="position3" value="Category3">
-              Category3
+              <input type="checkbox" name="category" value="costumeParty" class="category"> 
+              Costume Party
             </label>
             <label class="px-1">
-              <input type="checkbox" name="position4" value="Category4">
-              Category4
+              <input type="checkbox" name="category" value="musicConcert" class="category"> 
+              Music Concert
+            </label>
+            <label class="px-1">
+              <input type="checkbox" name="category" value="musicConcert" class="category"> 
+              Music Concert
+            </label>
+            <label class="px-1">
+              <input type="checkbox" name="category" value="race" class="category"> 
+              Race
+            </label>
+            <label class="px-1">
+              <input type="checkbox" name="category" value="bookExchange" class="category"> 
+              Book Exchange
+            </label>
+            <label class="px-1">
+              <input type="checkbox" name="category" value="cinema" class="category"> 
+              Cinema
             </label>
           </fieldset>
         </form>
@@ -95,9 +111,10 @@
         <!-- SEARCH BAR-->
         <form role="search" class="p-2 col-10 col-sm-8 col-md-6 col-lg-4">
           <label>
-            <input type="search" class="form-control" placeholder="Search..." aria-label="Search" id="search" oninput="searching()" > 
+            <input type="search" class="form-control" placeholder="Search..." aria-label="Search" id="search"
+              oninput="searching()">
           </label>
-        </form> 
+        </form>
       </div>
 
     </div>
@@ -106,9 +123,9 @@
     <div class="container">
       <div class="row">
         <div class="container album py-4 bg-light border rounded circle_bg">
-            <div class="row row-cols-1 row-cols-sm-3 row-cols-md-4 g-3 text-bg-light" id="album">
+          <div class="row row-cols-1 row-cols-sm-3 row-cols-md-4 g-3 text-bg-light" id="album">
 
-            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -136,4 +153,3 @@
 </body>
 
 </html>
-
