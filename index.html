@@ -69,54 +69,22 @@
 
   <main class="text-bg-dark bg-gradient">
     <div class="container">
-      <!-- FILTERS -->
-      <div class="row my-3 d-flex align-content-center justify-content-center text-center ">
+      <!-- CHECKFILTERS -->
+      <div class="row my-3 d-flex align-content-center justify-content-center text-center">
         <form class="p-2 col-10 col-lg-8">
-          <fieldset>
-            <label class="px-1">
-              <input type="checkbox" name="category" value="foodFair" class="category"> 
-              Food Fair
-            </label>
-            <label class="px-1">
-              <input type="checkbox" name="category" value="museum" class="category"> 
-              Museum
-            </label>
-            <label class="px-1">
-              <input type="checkbox" name="category" value="costumeParty" class="category"> 
-              Costume Party
-            </label>
-            <label class="px-1">
-              <input type="checkbox" name="category" value="musicConcert" class="category"> 
-              Music Concert
-            </label>
-            <label class="px-1">
-              <input type="checkbox" name="category" value="musicConcert" class="category"> 
-              Music Concert
-            </label>
-            <label class="px-1">
-              <input type="checkbox" name="category" value="race" class="category"> 
-              Race
-            </label>
-            <label class="px-1">
-              <input type="checkbox" name="category" value="bookExchange" class="category"> 
-              Book Exchange
-            </label>
-            <label class="px-1">
-              <input type="checkbox" name="category" value="cinema" class="category"> 
-              Cinema
-            </label>
+          <fieldset id="checkContainer">
+  
           </fieldset>
         </form>
 
         <!-- SEARCH BAR-->
         <form role="search" class="p-2 col-10 col-sm-8 col-md-6 col-lg-4">
           <label>
-            <input type="search" class="form-control" placeholder="Search..." aria-label="Search" id="search"
-              oninput="searching()">
+            <input type="search" class="form-control" placeholder="Search..." aria-label="Search" id="search"> 
+            <!-- oninput="searching()" -->
           </label>
         </form>
       </div>
-
     </div>
 
     <!-- CARDS -->
@@ -134,12 +102,12 @@
 
   <footer class="container-fluid bg-black text-bg-dark">
     <div class="row justify-content-between">
-      <div class="col social_icons">
+      <div class="col-4 social_icons">
         <a href="https://www.instagram.com/" target="_blank"><i class="bi bi-instagram social_icons"></i></a>
         <a href="https://www.facebook.com/" target="_blank"><i class="bi bi-twitter social_icons"></i></a>
         <a href="https://twitter.com/" target="_blank"><i class="bi bi-facebook social_icons"></i></a>
       </div>
-      <div class="col-3 p-2">
+      <div class="col p-2">
         <span>COHORT 15</span>
       </div>
     </div>

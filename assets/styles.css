@@ -8,10 +8,6 @@ body {
     grid-template-rows: auto 1fr auto;
 }
 
-h1{
-    font-size:3.5rem;
-    font-weight: 600;
-}
 
 a {
     color: inherit;
@@ -27,6 +23,13 @@ button {
     background-color: #D90368 !important;
 }
 
+span {
+    font-weight: 700;
+}
+
+footer {
+    margin-top: 2.5rem;
+}
 .btn-dark{
     background-color: #D90368 !important;
 }
@@ -55,6 +58,10 @@ button {
     height: 225px;
     width: 100%;
 }
+.card-body {
+    display: flex;
+    flex-direction: column;
+}
 
 .social_icons {
     font-size: 1.2em;
@@ -72,16 +79,12 @@ button {
 }
 
 .is_hidden {
-	display: none ;
+	display: none!important ;
     position: absolute;
 }
 
 .border{
     border: 2px solid #5b78ff!important;
-}
-
-#album {
-    background-color: #00000000!important;
 }
 
 .navBanner{
@@ -93,7 +96,7 @@ button {
 }
 
 .arrow{
-    font-size: 5rem;
+    font-size: 3.5rem;
     font-weight: 650;
 }
 
@@ -101,4 +104,13 @@ button {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+#album {
+    background-color: #00000000!important;
+}
+
+#checkContainer {
+    color:#6f8aff;
+    font-weight: bold;
 }
