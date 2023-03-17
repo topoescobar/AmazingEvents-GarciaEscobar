@@ -94,7 +94,7 @@ function renderCards(array) {
             <div class="d-flex justify-content-between align-items-center mt-auto">
               <small class="text-muted">Price: ${event.price} $</small>
               <div class="btn-group">
-                <a href="./details.html" class="btn btn-dark">Details</a>
+                <a href="./details.html?id=${event._id}" class="btn btn-dark">Details</a>
               </div>
             </div>
           </div>
