@@ -11,8 +11,8 @@
   <link rel="stylesheet" href="./assets/styles.css">
 </head>
 
-<body class="text-bg-dark bg-dark bg-gradient">
-  
+<body class="text-bg-dark">
+
   <header>
     <nav class="navbar navbar-expand-md navbar-dark bg-black text-center" aria-label="Offcanvas navbar large">
       <div class="container-fluid ">
@@ -55,55 +55,44 @@
     </nav>
 
     <!-- NAV-BANNER -->
-    <div class="container-fluid d-flex bgcolor2 text-center">
-      <div class="col " ><a class="fs-1 text-decoration-none text-reset" href="./stats.html"> &lt;</a></div>
-      <div class="col" >
-        <h1>Home</h1>
+    <div class="circle_bg">
+      <div class="container-fluid d-flex text-center align-content-center navBanner">
+        <div class="col"><a class=" text-decoration-none arrow" href="./stats.html"> &lt;</a></div>
+        <div class="col">
+          <h1>Home</h1>
+        </div>
+        <div class="col"><a class=" text-decoration-none  arrow" href="./upcoming_events.html"> &gt;</a></div>
       </div>
-      <div class="col " ><a class="fs-1 text-decoration-none text-reset" href="./upcoming_events.html"> &gt;</a></div>
     </div>
 
   </header>
 
-  <main>
-    <div class="container p-2 ">
-      <!-- FILTERS -->
-      <div class="row my-3 d-flex align-content-center justify-content-center text-center ">
+  <main class="text-bg-dark bg-gradient">
+    <div class="container">
+      <!-- CHECKFILTERS -->
+      <div class="row my-3 d-flex align-content-center justify-content-center text-center">
         <form class="p-2 col-10 col-lg-8">
-          <fieldset>
-            <label class="px-1">
-              <input type="checkbox" name="position1" value="Category1">
-              Category1
-            </label>
-            <label class="px-1">
-              <input type="checkbox" name="position2" value="Category2">
-              Category2
-            </label>
-            <label class="px-1">
-              <input type="checkbox" name="position3" value="Category3">
-              Category3
-            </label>
-            <label class="px-1">
-              <input type="checkbox" name="position4" value="Category4">
-              Category4
-            </label>
+          <fieldset id="checkContainer">
+  
           </fieldset>
         </form>
+
+        <!-- SEARCH BAR-->
         <form role="search" class="p-2 col-10 col-sm-8 col-md-6 col-lg-4">
-          <input type="search" class="form-control" placeholder="Search..." aria-label="Search">
+          <label>
+            <input type="search" class="form-control" placeholder="Search..." aria-label="Search" id="search"> 
+            <!-- oninput="searching()" -->
+          </label>
         </form>
       </div>
-
     </div>
 
     <!-- CARDS -->
     <div class="container">
       <div class="row">
-        <div class="album py-4 bg-light">
-          <div class="container">
-            <div class="row row-cols-1 row-cols-sm-3 row-cols-md-4 g-3 text-bg-light" id="album">
+        <div class="container album py-4 bg-light border rounded circle_bg">
+          <div class="row row-cols-1 row-cols-sm-3 row-cols-md-4 g-3 text-bg-light" id="album">
 
-            </div>
           </div>
         </div>
       </div>
@@ -113,12 +102,12 @@
 
   <footer class="container-fluid bg-black text-bg-dark">
     <div class="row justify-content-between">
-      <div class="col social_icons">
+      <div class="col-4 social_icons">
         <a href="https://www.instagram.com/" target="_blank"><i class="bi bi-instagram social_icons"></i></a>
         <a href="https://www.facebook.com/" target="_blank"><i class="bi bi-twitter social_icons"></i></a>
         <a href="https://twitter.com/" target="_blank"><i class="bi bi-facebook social_icons"></i></a>
       </div>
-      <div class="col-3 p-2">
+      <div class="col p-2">
         <span>COHORT 15</span>
       </div>
     </div>
@@ -132,4 +121,3 @@
 </body>
 
 </html>
-
