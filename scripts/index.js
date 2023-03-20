@@ -1,54 +1,33 @@
-/*const divAlbum = document.getElementById('album');
-
- function displayAlbum() {
-  for (activity of data.events) {
-    const card = document.createElement('div');
-    card.classList.add('col', 'card_col');
-    card.innerHTML = `
-        <div class="card border rounded shadow-sm">
-          <img src="${activity.image}" alt="event" class="cards_img object-fit-cover">
-          <div class="card-body">
-            <h3>${activity.name}</h3>
-            <p class="card-text ">${activity.description} </p>
-            <div class="d-flex justify-content-between align-items-center">
-              <small class="text-muted">Price: $$$</small>
-              <div class="btn-group">
-                <a href="./details.html" class="btn btn-dark">Details</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      `
-    divAlbum.append(card);
-  }
-}
-
-displayAlbum();
-
- function searching() {
-  let cards = document.querySelectorAll('.card_col')
-  let searchInput = document.getElementById("search").value
-  for (var i = 0; i < cards.length; i++) {
-    if (cards[i].innerText.toLowerCase().includes(searchInput.toLowerCase())) {
-      cards[i].classList.remove("is_hidden");
-    } else {
-      cards[i].classList.add("is_hidden");
-    }
-  }
-} 
- */
-
 const searchInput = document.querySelector("input[type='search']")
 const checkContainer = document.getElementById('checkContainer')
 const album = document.getElementById('album')
+const API_URL = "https://mindhub-xj03.onrender.com/api/amazing"
+let completeArray
 
 searchInput.addEventListener('input', crossFilter)
 checkContainer.addEventListener('change', crossFilter)
 
-renderCards(data.events)
-renderCheckBoxes(data.events)
+// const getEvents = async () => {
+//   const response = await fetch(API_URL)
+//   const dataEvents = await response.json()
+//   return dataEvents
+// }
 
-function crossFilter() {
+// console.log("funcion getEvents",getEvents());
+
+// renderCheckBoxes(data.events)
+// renderCards(data.events)
+
+fetch(API_URL)
+  .then((response) => response.json())
+  .then(array => {
+    completeArray = array
+    console.log("eventos",completeArray.events)
+    renderCards(completeArray.events)
+    renderCheckBoxes(completeArray.events)
+  })
+
+  function crossFilter() {
   let inputFilter = inputFiltering(data.events, searchInput.value)
   let categoryFilter = categoryFiltering(inputFilter)
   renderCards(categoryFilter)

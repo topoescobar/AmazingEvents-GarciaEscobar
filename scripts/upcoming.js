@@ -32,7 +32,7 @@ function renderUpcomingCards(array) {
           <div class="d-flex justify-content-between align-items-center mt-auto">
             <small class="text-muted">Price: ${aEvent.price} $</small>
             <div class="btn-group">
-              <a href="./details.html?id=${aEvent.}" class="btn btn-dark">Details</a>
+              <a href="./details.html?id=${aEvent._id}" class="btn btn-dark">Details</a>
             </div>
           </div>
         </div>
