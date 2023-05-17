@@ -70,7 +70,7 @@ function renderPastCards(array) {
   let cardsList = ''
   array.forEach(aEvent => {
       cardsList += `
-      <div class="col card_col">
+      <div class="col">
       <div class="card border rounded shadow-sm">
         <img src="${aEvent.image}" alt="event" class="cards_img object-fit-cover">
         <div class="card-body">

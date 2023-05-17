@@ -48,7 +48,7 @@ function renderCards(array) {
   let cards = ''
   array.forEach(event => {
     cards += `
-     <div class="col card_col">
+     <div class="col">
         <div class="card border rounded shadow-sm">
           <img src="${event.image}" alt="event" class="cards_img object-fit-cover">
           <div class="card-body">
