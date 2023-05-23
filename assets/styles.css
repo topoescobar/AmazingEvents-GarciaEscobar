@@ -54,13 +54,55 @@ footer {
     color: aliceblue;
 }
 
-.cards_img {
-    height: 225px;
-    width: 100%;
+.album .col {
+    margin:1rem 0;
 }
+
+.card {
+    height: 100%;
+    transition: 0.5s;
+}
+
+.card:hover {
+    width: 100%;
+    scale: 1 1.2;
+    z-index: 10;
+}
+
 .card-body {
     display: flex;
     flex-direction: column;
+    transition: 0.5s;
+}
+
+.card:hover .card-body{
+    scale: 1 0.8;
+    margin-top: 8em;
+}
+
+.cards_img {
+    height: 225px;
+    width: 100%;
+    border-radius: 0.3rem; 
+    transition: 0.5s;
+}
+
+.card:hover .cards_img {
+    transform: translate(0, -50%);
+    scale: 0.85;
+    box-shadow: 0 15px 45px bisque;
+    border: 2px solid #5b78ff;
+    border-radius: 0.3rem;
+    position: absolute;
+}
+.card-text{
+    visibility: hidden;
+    position: absolute;
+}
+
+.card:hover .card-text {
+    visibility: visible;
+    position: unset;
 }
 
 .social_icons {
@@ -74,9 +116,6 @@ footer {
 .circle_bg {
     background-image: url("../assets/background_3d.jpg")
     
-}
-.card {
-    height: 100%;
 }
 
 .is_hidden {
