@@ -60,10 +60,12 @@ footer {
 
 .card {
     height: 100%;
+    width: 100%;
     transition: 0.5s;
+    background-color: rgba(255, 228, 196, 0.6);
 }
 
-.card:hover {
+.row .col .card:hover {
     width: 100%;
     scale: 1 1.2;
     z-index: 10;
@@ -75,9 +77,9 @@ footer {
     transition: 0.5s;
 }
 
-.card:hover .card-body{
+.row .col .card:hover .card-body{
     scale: 1 0.8;
-    margin-top: 8em;
+    margin-top: 9em;
 }
 
 .cards_img {
